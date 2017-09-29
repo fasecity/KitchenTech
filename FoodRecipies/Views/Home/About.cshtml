@@ -1,7 +1,35 @@
-﻿@{
+﻿@model IEnumerable<FoodRecipies.Models.FoodInventory>
+@{
     ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+}
+
+<h1>Currently Low:</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>Category</th>
+            <th>Staff</th>
+            <th>Spec</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.Status</td>
+                <td>@i.Category</td>
+                <td>@i.Staff</td>
+                <td>@i.Spec</td>
+            </tr>
+            @*<ul class="list-group">
+                    <li class="list-group-item" style="background-color:crimson; color:white">@i.ToString()</li>
+                </ul>*@
+        }
+    </tbody>
+</table>
+
+
+
+

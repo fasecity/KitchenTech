@@ -20,6 +20,10 @@ namespace FoodRecipies.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public  DbSet<RecipiesModels> Recipies { get; set; }
+        public  DbSet<IngredientsModel> Ingredients { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -29,5 +33,10 @@ namespace FoodRecipies.Models
         {
             return new ApplicationDbContext();
         }
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<RecipiesModels>().
+        //    base.OnModelCreating(modelBuilder);
+        //}
     }
 }

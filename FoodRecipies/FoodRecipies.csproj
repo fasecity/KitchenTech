@@ -191,13 +191,52 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IngredientsModelsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RecipiesModelsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709270011443_InitialCreate.cs" />
+    <Compile Include="Migrations\201709270011443_InitialCreate.Designer.cs">
+      <DependentUpon>201709270011443_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709270049407_Initial.cs" />
+    <Compile Include="Migrations\201709270049407_Initial.Designer.cs">
+      <DependentUpon>201709270049407_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709270127520_Test.cs" />
+    <Compile Include="Migrations\201709270127520_Test.Designer.cs">
+      <DependentUpon>201709270127520_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709270140067_test2.cs" />
+    <Compile Include="Migrations\201709270140067_test2.Designer.cs">
+      <DependentUpon>201709270140067_test2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709270205446_test3.cs" />
+    <Compile Include="Migrations\201709270205446_test3.Designer.cs">
+      <DependentUpon>201709270205446_test3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709270255464_test4.cs" />
+    <Compile Include="Migrations\201709270255464_test4.Designer.cs">
+      <DependentUpon>201709270255464_test4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709271906567_edit1.cs" />
+    <Compile Include="Migrations\201709271906567_edit1.Designer.cs">
+      <DependentUpon>201709271906567_edit1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709271955486_edit2.cs" />
+    <Compile Include="Migrations\201709271955486_edit2.Designer.cs">
+      <DependentUpon>201709271955486_edit2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\FoodInventory.cs" />
+    <Compile Include="Models\FoodVT.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IngredientsModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\RecipiesModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -274,6 +313,32 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201709270011443_InitialCreate.resx">
+      <DependentUpon>201709270011443_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709270049407_Initial.resx">
+      <DependentUpon>201709270049407_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709270127520_Test.resx">
+      <DependentUpon>201709270127520_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709270140067_test2.resx">
+      <DependentUpon>201709270140067_test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709270205446_test3.resx">
+      <DependentUpon>201709270205446_test3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709270255464_test4.resx">
+      <DependentUpon>201709270255464_test4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271906567_edit1.resx">
+      <DependentUpon>201709271906567_edit1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709271955486_edit2.resx">
+      <DependentUpon>201709271955486_edit2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

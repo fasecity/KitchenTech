@@ -1,17 +1,32 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="badge">Make an ingredient</div>
+<div class="badge">Fill out form:</div>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    <div class="form-group">
+       
+        <label for="exampleFormControlInput1">Category:</label>
+        @Html.DropDownList("Category", null, new { @class = "form-control" })
+
+        <label for="exampleFormControlInput2">Station:</label>
+        @Html.DropDownList("Station", null, new { @class = "form-control" })
+
+        <label for="exampleFormControlInput3">Staff:</label>
+        @Html.DropDownList("Staff", null, new { @class = "form-control" })
+
+        <label for="exampleFormControlInput4">Status:</label>
+        @Html.DropDownList("stats", null, new { @class = "form-control" })
+
+        <label for="exampleFormControlInput5">Ingredient:</label>
+        @Html.TextBox("text","Enter ingredient", new { @class = "form-control" })
+
+        <label for="exampleFormControlInput6">Spec:</label>
+        @Html.TextBox("textspec","Enter Specs", new { @class = "form-control" })
+
+      <br />
+        <button class="btn btn-primary">submit</button>
+       
+    </div>
